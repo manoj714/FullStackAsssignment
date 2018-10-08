@@ -1,0 +1,40 @@
+<p-growl [(value)]="msgs"></p-growl>
+<h2> QUICK REGISTER </h2>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<form name="simpleForm">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">UserName</label>
+      <input name="email" type="name" class="form-control" [(ngModel)]="email"  id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input name="password" type="password" class="form-control" [(ngModel)]="password" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input name="address" type="text" class="form-control" id="inputAddress" [(ngModel)]="address" placeholder="Enter Full Address here">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">State</label>
+      <input name="city" type="text" class="form-control" placeholder="state" id="inputCity" [(ngModel)]="inputCity">
+    </div>
+   
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input name="zipcode" type="text" class="form-control" placeholder="zipcode" id="inputZip" [(ngModel)]="zipCode">
+    </div>
+  </div>
+ 
+  <button type="submit" class="btn btn-warning" (click)="submitForm()">Submit</button>
+  <button type="submit" class="btn btn-success" (click)="submitFormH()">Fail Safe Submit</button>
+</form>
+
+</div>
+</div>
+</div>
