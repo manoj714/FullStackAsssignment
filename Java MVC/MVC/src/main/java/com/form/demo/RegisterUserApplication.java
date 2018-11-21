@@ -9,8 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class RegisterUserApplication implements CommandLineRunner {
-	
-	
+		
 	@Autowired
 	RegistrationUserRepo formrespository;
 
@@ -21,8 +20,5 @@ public class RegisterUserApplication implements CommandLineRunner {
 	@Override
 	public void run(String...  args) {
 		formrespository.findAll();
-		
-		
-		
 	}
 }
